@@ -1,0 +1,585 @@
+:root {
+   --heart-color: #f14e95;
+   --main-color: #f14e95;
+   --bg: #0a0a0a;
+   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+   overflow-x: hidden;
+}
+
+body {
+   font-size: 1rem;
+   font-family: 'Work Sans', sans-serif;
+   width: 100vw;
+}
+
+.hero::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url(img/prewed.svg);
+   background-size: cover;
+   background-position: center;
+   z-index: -1;
+   filter: brightness(30%);
+}
+
+.hero {
+   min-height: 100vh;
+   position: relative;
+}
+
+.hero h1,
+.hero h4,
+.hero p {
+   text-shadow: var(--shadow);
+}
+
+.hero h1 {
+   font-family: 'Sacramento', cursive;
+   font-size: 5rem;
+}
+
+
+.hero h4 {
+   font-size: 1.3rem;
+   line-height: 2.4rem;
+}
+
+.hero h4 span {
+   font-size: 1.7rem;
+}
+
+.hero p {
+   font-size: 1.1rem;
+}
+
+.hero a {
+   color: var(--main-color);
+   background-color: white;
+   box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+   color: white;
+   background-color: var(--main-color);
+}
+
+.mynavbar {
+   display: none;
+
+}
+
+.mynavbar .container {
+   max-width: 450px;
+   background-color: white !important;
+   border-radius: 7px;
+   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3), 0 -0.5px 5px rgba(0, 0, 0, 0.15);
+   justify-content: space-around;
+}
+
+.mynavbar .container i {
+   color: var(--main-color);
+   font-size: 1.2rem;
+}
+
+.mynavbar .container .song-icon {
+   margin: 7px 0;
+   font-size: 2.2rem;
+   animation: songIcon 4s linear infinite;
+   transform-origin: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   line-height: none;
+   cursor: pointer;
+}
+
+@keyframes songIcon {
+   from {
+      transform: rotate(0);
+   }
+
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+
+.home {
+   background-image: url(img/bg-black.svg);
+   background-size: cover;
+   background-position: center;
+   min-height: 100vh;
+   padding: 5rem 0 5rem 0;
+   position: relative;
+
+}
+
+.home h2,
+.info h2,
+.story h2,
+.gallery h2,
+.rsvp h2,
+.gifts h2,
+.yang-berbahagia h2 {
+   font-family: 'Berkshire Swash', cursive;
+   color: var(--main-color);
+   font-size: 2.6rem;
+   font-weight: bolder;
+   margin-bottom: 2rem;
+}
+
+.home h5 {
+   font-family: 'Work Sans', sans-serif;
+   color: white;
+   font-size: 1.1rem;
+}
+
+.home p {
+   font-family: 'Work Sans', sans-serif;
+   color: white;
+   font-size: 1rem;
+}
+
+.home .couple {
+   margin-top: 25px !important;
+   position: relative;
+}
+
+.home .couple h4 {
+   font-family: 'Berkshire Swash', cursive;
+   font-size: 2rem;
+   color: var(--main-color);
+}
+
+.home .couple img {
+   width: 100%;
+   aspect-ratio: 1/1;
+   object-fit: cover;
+   object-position: center top;
+   padding: 2px;
+   border: 2px solid;
+   border-color: var(--main-color);
+}
+
+.home .couple .pria {
+   object-position: center 10%;
+}
+
+.home .heart {
+   width: 50px;
+   height: 50px;
+   background-color: white;
+   display: flex;
+   border-radius: 50%;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+   position: absolute;
+   left: 50%;
+   z-index: 999;
+   transform: translateX(-50%) translateY(55px);
+}
+
+.home .heart i {
+   margin: auto;
+   color: var(--heart-color);
+}
+
+.bi-heart-fill {
+   animation: flip 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1.5s infinite both;
+}
+
+.home .hadits {
+   padding-top: 1.7rem;
+}
+
+.home .hadits p {
+   font-size: 0.9rem;
+   font-weight: 300;
+}
+
+@keyframes flip {
+   0% {
+      transform: rotateY(0);
+   }
+
+   100% {
+      transform: rotateY(180deg);
+   }
+}
+
+.info {
+   background-image: url(img/bg-home.svg);
+   background-position: center;
+   background-size: cover;
+   color: #444;
+   padding-top: 5rem;
+   min-height: 100vh;
+}
+
+.info .description {
+   font-weight: 300;
+}
+
+
+.info .card {
+   background-color: rgba(0, 0, 0, 0.1) !important;
+   color: #444 !important;
+   border: 1px solid #999;
+}
+
+.info .card-header {
+   border-bottom: 1px solid #999;
+   font-weight: 600;
+}
+
+.story {
+   padding-top: 5rem;
+   background-image: url(img/bg-home.svg);
+   background-size: cover;
+   background-position: center;
+   padding-bottom: 8rem;
+}
+
+.story span,
+.yang-berbahagia span {
+   text-transform: uppercase;
+   color: #666;
+   font-size: 0.9rem;
+   letter-spacing: 1px;
+   display: block;
+   margin-bottom: 1rem;
+}
+
+.story p,
+gallery p,
+rsvp p {
+   font-size: 1rem;
+   font-weight: 300;
+}
+
+.gallery {
+   padding-top: 5rem;
+   padding-bottom: 5rem;
+   min-height: 100vh;
+   background-image: url(img/bg-black.svg);
+   background-position: center;
+   background-size: cover;
+
+}
+
+.gallery span,
+.gifts span {
+   text-transform: uppercase;
+   color: white;
+   font-size: 0.9rem;
+   letter-spacing: 1px;
+   display: block;
+   margin-bottom: 1rem;
+}
+
+.gallery p,
+.gifts p {
+   color: white;
+   font-weight: 300;
+}
+
+.gallery-item {
+   width: 25%;
+   height: 200px;
+   overflow: hidden;
+}
+
+.gallery-item .img-list {
+   width: 80%;
+   aspect-ratio: 3/2;
+   object-fit: cover;
+}
+
+.rsvp {
+   padding-top: 5rem;
+   padding-bottom: 5rem;
+   min-height: 100vh;
+   background-image: url(img/bg-home.svg);
+   background-position: center;
+   background-size: cover;
+
+}
+
+.rsvp button {
+   background-color: var(--main-color);
+   color: white;
+   border: 1px solid var(--main-color);
+}
+
+.rsvp button:hover {
+   background-color: white;
+   color: var(--main-color);
+   border: 1px solid var(--main-color);
+}
+
+.gifts {
+   padding-top: 5rem;
+   padding-bottom: 5rem;
+   min-height: 100vh;
+   background-image: url(img/bg-black.svg);
+   background-position: center;
+   background-size: cover;
+
+}
+
+.gifts img {
+   width: 12%;
+}
+
+.gifts .rek span {
+   color: var(--bg);
+   font-size: 1.1rem;
+}
+
+.gifts .rekening {
+   background-color: var(--main-color);
+   color: white;
+   font-size: 0.7rem;
+}
+
+.gifts .rekening:hover {
+   background-color: white;
+   color: var(--main-color);
+   border: 1px solid var(--main-color);
+}
+
+.yang-berbahagia {
+   padding-top: 5rem;
+   padding-bottom: 8rem;
+   min-height: 100vh;
+   background-image: url(img/bg-home.svg);
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+}
+
+.yang-berbahagia p {
+   color: #444;
+   margin-bottom: 3.1rem;
+}
+
+.yang-berbahagia .mempelai {
+   display: flex;
+   flex-direction: row;
+}
+
+.yang-berbahagia .mempelai h2 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.yang-berbahagia .mempelai img {
+   width: 65px;
+   margin: 13px;
+}
+
+.arabic {
+   color: white;
+   font-size: 2rem;
+   margin: 1.1rem;
+}
+
+.yang-berbahagia .arabic {
+   font-size: 2rem;
+   margin: 1.1rem;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader-wrapper {
+   position: fixed;
+   display: block;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #f7f9fb;
+   transition: 0.75s;
+   z-index: 99999;
+}
+
+.loader-hidden {
+   opacity: 0;
+   visibility: 0;
+   z-index: -1;
+}
+
+.loader {
+   width: 50px;
+   aspect-ratio: 1;
+   display: grid;
+}
+
+.loader::before,
+.loader::after {
+   content: "";
+   grid-area: 1/1;
+   --c: no-repeat radial-gradient(farthest-side, var(--main-color) 92%, #0000);
+   background:
+      var(--c) 50% 0,
+      var(--c) 50% 100%,
+      var(--c) 100% 50%,
+      var(--c) 0 50%;
+   background-size: 12px 12px;
+   animation: l12 1s infinite;
+}
+
+.loader::before {
+   margin: 4px;
+   filter: hue-rotate(45deg);
+   background-size: 8px 8px;
+   animation-timing-function: linear
+}
+
+@keyframes l12 {
+   100% {
+      transform: rotate(.5turn)
+   }
+}
+
+
+/* media query */
+
+/* extra large */
+@media (max-width: 1200px) {
+   .home .heart {
+      transform: translateX(-50%) translateY(40px);
+   }
+}
+
+/* laptop */
+@media (max-width: 992px) {
+   html {
+      font-size: 75%;
+   }
+
+   .home .heart {
+      display: none;
+   }
+
+   .navbar .container i {
+      font-size: 2rem;
+   }
+
+   .navbar .container .song-icon {
+      font-size: 2.7rem;
+      transform-origin: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: none;
+      cursor: pointer;
+   }
+
+   .rsvp button {
+      margin-top: 0px !important;
+   }
+
+   .yang-berbahagia {
+      padding-top: 12rem;
+   }
+
+}
+
+/* tablet */
+@media (max-width: 768px) {
+   html {
+      font-size: 68%;
+   }
+
+   .simply-countdown {
+      display: flex;
+      justify-content: center;
+   }
+
+   .simply-countdown>.simply-section {
+      padding: 35px;
+      margin: 16px;
+   }
+
+   .mynavbar .container {
+      padding: 8px 0px;
+      max-width: 90vw;
+      justify-content: space-around;
+   }
+
+   .navbar .container i {
+      font-size: 1.8rem;
+   }
+
+   .navbar .container .song-icon {
+      font-size: 2.4rem;
+      transform-origin: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: none;
+      cursor: pointer;
+   }
+
+   .home .couple h4,
+   .home .couple p {
+      align-items: center;
+   }
+
+   .home {
+      padding: 4.5rem 0 3rem 0;
+   }
+
+   .home .info-acara {
+      margin-bottom: 1rem !important;
+   }
+
+   .home .couple {
+      margin-top: 1rem !important;
+   }
+
+   .gallery-item {
+      width: 50%;
+   }
+
+   .yang-berbahagia {
+      padding-top: 12rem;
+   }
+}
+
+/* mobile phone */
+@media (max-width: 576px) {
+   html {
+      font-size: 64%;
+   }
+
+   .simply-countdown {
+      justify-content: space-evenly;
+   }
+
+   .simply-countdown>.simply-section {
+      padding: 28px;
+      margin: 5px;
+   }
+
+   .hero::before {
+      background-position: 55% center;
+   }
+
+
+   .gallery-item {
+      width: 100%;
+   }
+
+   .yang-berbahagia {
+      padding-top: 10rem;
+   }
+
+}
