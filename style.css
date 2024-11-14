@@ -109,7 +109,7 @@ body {
 
 
 .home {
-   background-image: url(img/bgblack.webp);
+   background-image: url(img/bgblack.jpg);
    background-size: cover;
    background-position: center;
    min-height: 100vh;
@@ -264,7 +264,7 @@ rsvp p {
    padding-top: 5rem;
    padding-bottom: 5rem;
    min-height: 100vh;
-   background-image: url(img/bgblack.webp);
+   background-image: url(img/bgblack.jpg);
    background-position: center;
    background-size: cover;
 
@@ -324,7 +324,7 @@ rsvp p {
    padding-top: 5rem;
    padding-bottom: 5rem;
    min-height: 100vh;
-   background-image: url(img/bgblack.webp);
+   background-image: url(img/bgblack.jpg);
    background-position: center;
    background-size: cover;
 
