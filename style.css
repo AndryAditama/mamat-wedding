@@ -74,7 +74,7 @@ body {
 
 .mynavbar .container {
    max-width: 450px;
-   background-color: white !important;
+   background-color: rgba(255, 255, 255, 0.9) !important;
    border-radius: 7px;
    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3), 0 -0.5px 5px rgba(0, 0, 0, 0.15);
    justify-content: space-around;
@@ -109,7 +109,7 @@ body {
 
 
 .home {
-   background-image: url(img/bg-black.svg);
+   background-image: url(img/bgblack.webp);
    background-size: cover;
    background-position: center;
    min-height: 100vh;
@@ -145,7 +145,6 @@ body {
 }
 
 .home .couple {
-   margin-top: 25px !important;
    position: relative;
 }
 
@@ -216,6 +215,7 @@ body {
    background-size: cover;
    color: #444;
    padding-top: 5rem;
+   padding-bottom: 5rem;
    min-height: 100vh;
 }
 
@@ -264,7 +264,7 @@ rsvp p {
    padding-top: 5rem;
    padding-bottom: 5rem;
    min-height: 100vh;
-   background-image: url(img/bg-black.svg);
+   background-image: url(img/bgblack.webp);
    background-position: center;
    background-size: cover;
 
@@ -324,7 +324,7 @@ rsvp p {
    padding-top: 5rem;
    padding-bottom: 5rem;
    min-height: 100vh;
-   background-image: url(img/bg-black.svg);
+   background-image: url(img/bgblack.webp);
    background-position: center;
    background-size: cover;
 
@@ -464,8 +464,20 @@ rsvp p {
       font-size: 75%;
    }
 
+   .home .couple h4 {
+      font-size: 3rem !important;
+   }
+
+   .home .couple p {
+      font-size: 1.5rem;
+   }
+
    .home .heart {
       display: none;
+   }
+
+   .home .hadits p {
+      font-size: 1.1rem;
    }
 
    .navbar .container i {
@@ -528,9 +540,18 @@ rsvp p {
       cursor: pointer;
    }
 
+
    .home .couple h4,
    .home .couple p {
       align-items: center;
+   }
+
+   .home .couple h4 {
+      font-size: 2rem !important;
+   }
+
+   .home .couple p {
+      font-size: 1.1rem;
    }
 
    .home {
@@ -542,7 +563,12 @@ rsvp p {
    }
 
    .home .couple {
-      margin-top: 1rem !important;
+      margin-top: 1.8rem !important;
+   }
+
+   .home .hadits p {
+      font-size: 0.9rem;
+      font-weight: 300;
    }
 
    .gallery-item {
@@ -573,6 +599,11 @@ rsvp p {
       background-position: 55% center;
    }
 
+   .home .couple {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 2rem;
+   }
 
    .gallery-item {
       width: 100%;

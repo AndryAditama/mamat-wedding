@@ -4,7 +4,7 @@
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Undangan</title>
+   <title>Fira & Ubay's Wedding</title>
 
    <!-- bootstrap -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -27,6 +27,8 @@
    <!-- AOS -->
    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.3/simple-lightbox.min.css" rel="stylesheet">
+
    <!-- CSS -->
    <link rel="stylesheet" href="style.css">
 </head>
@@ -35,14 +37,14 @@
    <section id="hero"
       class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
       <main>
-         <h1 data-aos="fade-down">Fira & Ubay</h1>
-         <p data-aos="fade-down">Akan melangsungkan pernikahan dalam:</p>
+         <h1 data-aos="fade-down" data-aos-anchor=".hero">Fira & Ubay</h1>
+         <p data-aos="fade-down" data-aos-anchor=".hero">Akan melangsungkan pernikahan dalam:</p>
 
-         <div class="simply-countdown" data-aos="fade-in"></div>
+         <div class="simply-countdown" data-aos="fade-in" data-aos-anchor=".hero" data-aos-offset="80"></div>
 
          <a href="#home" class="btn btn-md mt-4 mb-5 btnShow" onclick="enableScroll()">Lihat
             Undangan</a>
-         <h4 data-aos="fade-up">Kepada Yth: Bapak/Ibu/Saudara/i, <br><span></span></h4>
+         <h4 data-aos="fade-up" data-aos-anchor=".hero">Kepada Yth: Bapak/Ibu/Saudara/i, <br><span></span></h4>
       </main>
    </section>
 
@@ -68,8 +70,8 @@
 
    <section id="home" class="home">
       <div class="container">
-         <div class="row info-acara justify-content-center mb-6">
-            <div class="col-md-8 text-center" data-aos="fade-down">
+         <div class="row info-acara justify-content-center mb-3">
+            <div class="col-md-8 text-center" data-aos="fade-down" data-aos-anchor=".home">
                <h2>Acara Pernikahan</h2>
                <h5>Diselenggarakan pada 27 Desember 2024 di Pamekasan Jawa Timur</h5>
                <span class="arabic">اَلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَا تُهُ</span>
@@ -79,15 +81,15 @@
             </div>
          </div>
 
-         <div class="row couple m-2">
-            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+         <div class="row couple m-2 mt-5 mb-4">
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200" data-aos-anchor=".home">
                <div class="row align-items-center justify-content-end">
                   <div class="col-7 text-end">
                      <h4>Fira Nur Hamidah</h4>
-                     <p>Putra Bapak Rastono, ST. <br> dan <br> Ibu Fifi Safitri (Alm)</p>
+                     <p>Putri Bapak Rastono, ST. <br> dan <br> Ibu Fifi Safitri (Alm)</p>
                   </div>
                   <div class="col-4">
-                     <img src="img/fira.jpeg" loading="lazy" alt="Mempelai Wanita"
+                     <img src="img/fira.webp" loading="lazy" alt="Mempelai Wanita"
                         class="img-responsive rounded-circle">
                   </div>
                </div>
@@ -95,7 +97,7 @@
 
             <span class="heart"><i class="bi bi-heart-fill" data-aos="fade-in" data-aos-delay="50"></i></span>
 
-            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="400" data-aos-anchor=".home">
                <div class="row align-items-center justify-content-start">
                   <div class=" col-4">
                      <img src="img/mamat.webp" loading="lazy" alt="Mempelai Pria"
@@ -110,13 +112,12 @@
          </div>
 
          <div class="row justify-content-center">
-            <div class="hadits col-md-8 col-10 text-center" data-aos="fade-up">
-               <p>Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari
-                  jenismu
-                  sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa
-                  kasih dan sayang. Sungguh pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran
-                  Allah)
-                  bagi kaum yang berfikir.</p>
+            <div class="hadits col-10 text-center" data-aos="fade-up" data-aos-anchor=".home">
+               <p>"Dan di antara ayat-ayat-Nya ialah Dia menciptakan untukmu istri-istri dari jenismu sendiri, supaya
+                  kamu merasa nyaman
+                  kepadanya, dan dijadikan-Nya di antaramu mawadah dan rahmah. Sesungguhnya pada yang demikian itu
+                  benar-benar terdapat
+                  tanda-tanda bagi kaum yang berpikir"</p>
                <p>( Ar-Rum 21 )</p>
             </div>
          </div>
@@ -127,15 +128,15 @@
    <section id="info" class="info">
       <div class="container">
          <div class="row justify-content-center">
-            <div class="col-md-8 col-10 text-center" data-aos="fade-down">
+            <div class="col-md-8 col-10 text-center" data-aos="fade-down" data-aos-anchor=".info" data-aos-offset="100">
                <h2>Informasi Acara</h2>
                <p class="alamat">Acara akan dilaksanakan di Gedung Bakorwil Pamekasan <br>
                   Jl. Slamet Riadi No.1, RW.08, Rw. 08, Barurambat Kota, Kec. Pamekasan, Kabupaten Pamekasan, Jawa
                   Timur</p>
                <a href="https://maps.app.goo.gl/PddsSaPp2oLGNHnW9" target="_blank" class="btn btn-dark btn-sm my-3"
-                  data-aos="fade-in">Klik
+                  data-aos="fade-in" data-aos-anchor=".info">Klik
                   Untuk Melihat Lokasi</a>
-               <p class="description" data-aos="fade-in">
+               <p class="description" data-aos="fade-in" data-aos-anchor=".info">
                   Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun tidak ada
                   tanda-tanda
                   sedang dilangsungkan acara pernikahan, bisa jadi anda salah jadwal atau salah tempat.
@@ -144,7 +145,7 @@
          </div>
 
          <div class="row justify-content-center mt-4">
-            <div class="col-md-5 col-10" data-aos="zoom-in" data-aos-delay="200">
+            <div class="col-md-5 col-10" data-aos="zoom-in" data-aos-delay="200" data-aos-anchor=".info">
                <div class="card text-center text-bg-light mb-5">
                   <div class="card-header">
                      AKAD NIKAH
@@ -171,7 +172,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-md-5 col-10" data-aos="zoom-in" data-aos-delay="400">
+            <div class="col-md-5 col-10" data-aos="zoom-in" data-aos-delay="400" data-aos-anchor=".info">
                <div class="card text-center text-bg-light">
                   <div class="card-header jadwal">
                      RESEPSI
@@ -206,38 +207,63 @@
    <section id="gallery" class="gallery">
       <div class="container">
          <div class="row justify-content-center">
-            <div class="col-md-8 col-10 text-center" data-aos="fade-down">
+            <div class="col-md-8 col-10 text-center mb-3" data-aos="fade-down" data-aos-anchor=".gallery">
                <h2>Galeri Foto</h2>
                <span>Memori Kisah Kami</span>
             </div>
          </div>
 
-         <div class="row text-center text-lg-start justify-content-center" data-aos="fade-in">
-            <div class="col-lg-3 col-md-4 col-8" data-aos="fade-in" data-aos-delay="200">
-               <a href="img/mamat.webp" class="d-block mb-4 h-100" data-toggle="lightbox"
-                  data-caption="Moch. Ubaidillah" data-gallery="My-Gallery">
-                  <img class="img-fluid img-thumbnail img-list" loading="lazy" src="img/mamat.webp" alt="">
+         <a href="img/1.webp">
+            <img src="img/1.webp" alt="Foto 1" class="img-thumbnail">
+         </a>
+         <a href="img/2.webp">
+            <img src="img/2.webp" alt="Foto 2" class="img-thumbnail">
+         </a>
+
+         <!-- <div class="row justify-content-center align-items-center">
+            <div class="col-lg-3 col-md-4 col-6" data-aos="flip-left" data-aos-delay="200" data-aos-anchor=".gallery">
+               <a href="img/1.svg" class="d-block mb-4 h-100" data-toggle="lightbox" data-caption="Moch. Ubaidillah"
+                  data-gallery="My-Gallery">
+                  <img class="img-fluid img-thumbnail img-list" loading="lazy" src="img/1.svg" alt="">
                </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-8" data-aos="fade-in" data-aos-delay="400">
-               <a href="img/pre.webp" class="d-block mb-4 h-100" data-toggle="lightbox" data-caption="Our Memory"
+            <div class="col-lg-3 col-md-4 col-6" data-aos="flip-left" data-aos-delay="400" data-aos-anchor=".gallery">
+               <a href="img/3.webp" class="d-block mb-4 h-100" data-toggle="lightbox" data-caption="Our Memory"
+                  data-gallery="My-Gallery">
+                  <img class="img-fluid img-thumbnail" loading="lazy" src="img/3.webp" alt="">
+               </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6" data-aos="flip-left" data-aos-delay="600" data-aos-anchor=".gallery">
+               <a href="img/4.webp" class="d-block mb-4 h-100" data-toggle="lightbox" data-caption="Fira Nur Hamidah"
+                  data-gallery="My-Gallery">
+                  <img class="img-fluid img-thumbnail" loading="lazy" src="img/4.webp" alt="">
+               </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6" data-aos="flip-left" data-aos-delay="800" data-aos-anchor=".gallery">
+               <a href="img/5.webp" class="d-block mb-4 h-100" data-toggle="lightbox" data-caption="Fira Nur Hamidah"
+                  data-gallery="My-Gallery">
+                  <img class="img-fluid img-thumbnail" loading="lazy" src="img/5.webp" alt="">
+               </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6" data-aos="flip-left" data-aos-delay="1000" data-aos-anchor=".gallery">
+               <a href="img/2.webp" class="d-block mb-4 h-100" data-toggle="lightbox" data-caption="Fira Nur Hamidah"
+                  data-gallery="My-Gallery">
+                  <img class="img-fluid img-thumbnail" loading="lazy" src="img/2.webp" alt="">
+               </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6" data-aos="flip-left" data-aos-delay="1200" data-aos-anchor=".gallery">
+               <a href="img/pre.webp" class="d-block mb-4 h-100" data-toggle="lightbox" data-caption="Fira Nur Hamidah"
                   data-gallery="My-Gallery">
                   <img class="img-fluid img-thumbnail" loading="lazy" src="img/pre.webp" alt="">
                </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-8" data-aos="fade-in" data-aos-delay="600">
-               <a href="img/fira.jpeg" class="d-block mb-4 h-100" data-toggle="lightbox" data-caption="Fira Nur Hamidah"
-                  data-gallery="My-Gallery">
-                  <img class="img-fluid img-thumbnail" loading="lazy" src="img/fira.jpeg" alt="">
-               </a>
-            </div>
-         </div>
+         </div> -->
       </div>
    </section>
 
    <section class="rsvp" id="rsvp">
       <div class="container">
-         <div class="row justify-content-center" data-aos="fade-down" data-aos-offset="80">
+         <div class="row justify-content-center" data-aos="fade-down" data-aos-offset="80" data-aos-anchor=".rsvp">
             <div class="col-md-8 col-10 text-center">
                <h2>Konfirmasi Kehadiran</h2>
                <p>Dimohonkan untuk mengisi form di bawah ini untuk konfirmasi kehadiran anda</p>
@@ -246,7 +272,8 @@
 
          <form id="my-form" method="post"
             action="https://script.google.com/macros/s/AKfycbzRb0h6zPPspn90cqzpML3byOpJKTbHCnRYgRaN44b_vllVtRxu-6D1pFh49NbA3Vezvw/exec"
-            class="row row-cols-lg-auto g-3 align-items-center m-4 justify-content-center" data-aos="fade-in">
+            class="row row-cols-lg-auto g-3 align-items-center m-4 justify-content-center" data-aos="zoom-in"
+            data-aos-anchor=".rsvp" data-aos-delay="300">
             <div class="col-12">
                <div class="mb-3">
                   <label for="nama" class="form-label">Nama</label>
@@ -282,7 +309,7 @@
    <section class="gifts" id="gifts">
       <div class="container">
          <div class="row justify-content-center">
-            <div class="col-md-8 col-10 text-center">
+            <div class="col-md-8 col-10 text-center" data-aos="fade-down" data-aos-anchor=".gifts" data-aos-delay="100">
                <h2>Kirim Hadiah</h2>
                <span>Ungkapan Tanda Kasih</span>
                <p>Anda tidak diwajibkan untuk mengirim hadiah. Apabila Anda ingin mengirim hadiah, bisa dikirim
@@ -290,7 +317,8 @@
             </div>
          </div>
 
-         <div class="row justify-content-center text-center m-4">
+         <div class="row justify-content-center text-center m-4" data-aos="zoom-in" data-aos-anchor=".gifts"
+            data-aos-delay="300">
             <div class="col-md-8">
                <ul class="list-group">
                   <li class="list-group-item">
@@ -315,20 +343,20 @@
    <section id="yang-berbahagia" class="yang-berbahagia">
       <div class="container">
          <div class="row justify-content-center text-center">
-            <div class="col-md-10 col-10">
+            <div class="col-md-10 col-10" data-aos="fade-down" data-aos-anchor=".yang-berbahagia" data-aos-delay="200">
                <p>Merupakan suatu kebahagiaan bagi kami apabila
                   Bapak/Ibu/Saudara/i berkenan hadir serta memberikan
                   do'a restu kepada kami. Atas kehadiran dan do'a restunya kami ucapkan terima kasih.</p>
                <span class="arabic">وَالسَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</span>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-10" data-aos="zoom-in" data-aos-anchor=".yang-berbahagia" data-aos-delay="300">
                <div class="row">
                   <span>Kami yang berbahagia</span>
                   <p>Kel. Bapak Rastono, ST.<br>dan Ibu Fifi Safitri (Alm)</p>
                   <p>Kel. Bapak Taufiqurrahman Zin<br>dan Ibu Romlah, S.H.</p>
                   <span>dan mempelai berdua</span>
                </div>
-               <div class="row mempelai">
+               <div class="row mempelai" data-aos="flip-left" data-aos-anchor=".yang-berbahagia" data-aos-delay="500">
                   <h2>Fira<span><img src="img/doves.png" alt="doves"></span>Ubay</h2>
                </div>
             </div>
@@ -353,15 +381,36 @@
    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.3/simple-lightbox.min.js"></script>
+   <script>
+      const gallery = new SimpleLightbox('.gallery a', { /* options */ });
+   </script>
+
    <script>
       AOS.init({
 
-         offset: 100, // offset (in px) from the original trigger point
+         offset: 200, // offset (in px) from the original trigger point
          delay: 0, // values from 0 to 3000, with step 50ms
          duration: 1000, // values from 0 to 3000, with step 50ms
          easing: 'ease', // default easing for AOS animations
          mirror: true
       });
+   </script>
+
+   <script>
+      import Lightbox from 'bs5-lightbox';
+
+      const options = {
+         keyboard: true,
+         size: 'fullscreen'
+      };
+
+      document.querySelectorAll('[data-toggle="lightbox"]').forEach((el) => el.addEventListener('click', (e) => {
+         e.preventDefault();
+         const lightbox = new Lightbox(el, options);
+         lightbox.show();
+      }));
    </script>
 
    <script>
@@ -413,8 +462,6 @@
       function hideNavbar() {
          document.querySelector(".mynavbar").style.display = 'none';
       }
-
-
    </script>
 
    <script>
