@@ -583,7 +583,7 @@ rsvp p {
 /* mobile phone */
 @media (max-width: 576px) {
    html {
-      font-size: 64%;
+      font-size: 74%;
    }
 
    .simply-countdown {
