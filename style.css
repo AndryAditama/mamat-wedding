@@ -286,15 +286,15 @@ rsvp p {
    font-weight: 300;
 }
 
-.gallery-item {
-   width: 25%;
-   height: 200px;
-   overflow: hidden;
+.gallery .t2,
+.gallery .t3,
+.gallery .t5 {
+   scale: 1.2;
 }
 
-.gallery-item .img-list {
-   width: 80%;
-   aspect-ratio: 3/2;
+.gallery .img-thumbnail {
+   background-color: transparent;
+   border: none;
    object-fit: cover;
 }
 
@@ -305,7 +305,6 @@ rsvp p {
    background-image: url(img/bg-home.svg);
    background-position: center;
    background-size: cover;
-
 }
 
 .rsvp button {
@@ -605,8 +604,8 @@ rsvp p {
       gap: 2rem;
    }
 
-   .gallery-item {
-      width: 100%;
+   .gallery .foto3 {
+      width: 50%;
    }
 
    .yang-berbahagia {

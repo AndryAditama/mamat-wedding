@@ -198,7 +198,7 @@
                      </div>
                   </div>
                   <div class="card-footer">
-                     <span>Di Gedung Bakorwil (Ex Kresidennan) <br>
+                     <span>Di Gedung Bakorwil (Ex Kresidenan) <br>
                         Jl. Slamet Riadi No.1, Kec. Pamekasan, Kab. Pamekasan, Jawa
                         Timur</span>
                   </div>
@@ -217,41 +217,37 @@
             </div>
          </div>
 
-         <div class="row justify-content-center align-items-center">
+         <div class="row justify-content-center align-items-center m-2">
             <div class="col-lg-3 col-md-4 col-6 d-flex" data-aos="flip-left" data-aos-delay="200"
                data-aos-anchor=".gallery">
                <a href="img/1.webp" class="d-block mb-4 h-100">
-                  <img src="img/1.webp" alt="Foto 1" class="img-thumbnail" loading="lazy">
+                  <div class="frame">
+                     <img src="img/1fr.webp" alt="Foto 1" class="img-thumbnail t1" loading="lazy">
+                  </div>
                </a>
             </div>
             <div class="col-lg-3 col-md-4 col-6 d-flex" data-aos="flip-left" data-aos-delay="400"
                data-aos-anchor=".gallery">
                <a href="img/3.webp" class="d-block mb-4 h-100">
-                  <img src="img/3.webp" alt="Foto 2" class="img-thumbnail" loading="lazy">
+                  <img src="img/3fr.webp" alt="Foto 2" class="img-thumbnail t2" loading="lazy">
                </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-6 d-flex" data-aos="flip-left" data-aos-delay="600"
-               data-aos-anchor=".gallery">
-               <a href="img/4.webp" class="d-block mb-4 h-100">
-                  <img src="img/4.webp" alt="Foto 3" class="img-thumbnail" loading="lazy">
+            <div class="col-12 col-md-4 col-lg-3 d-flex justify-content-center" data-aos="flip-left"
+               data-aos-delay="600" data-aos-anchor=".gallery">
+               <a href="img/2.webp" class="d-block mb-4 h-100 foto3">
+                  <img src="img/2fr.webp" alt="Foto 3" class="img-thumbnail t3" loading="lazy">
                </a>
             </div>
             <div class="col-lg-3 col-md-4 col-6 d-flex" data-aos="flip-left" data-aos-delay="800"
                data-aos-anchor=".gallery">
-               <a href="img/5.webp" class="d-block mb-4 h-100">
-                  <img src="img/5.webp" alt="Foto 4" class="img-thumbnail" loading="lazy">
+               <a href="img/45.webp" class="d-block mb-4 h-100">
+                  <img src="img/45fr.webp" alt="Foto 4" class="img-thumbnail t4" loading="lazy">
                </a>
             </div>
             <div class="col-lg-3 col-md-4 col-6 d-flex" data-aos="flip-left" data-aos-delay="1200"
                data-aos-anchor=".gallery">
                <a href="img/pre.webp" class="d-block mb-4 h-100">
-                  <img src="img/pre.webp" alt="Foto 5" class="img-thumbnail" loading="lazy">
-               </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6 d-flex" data-aos="flip-left" data-aos-delay="1000"
-               data-aos-anchor=".gallery">
-               <a href="img/2.webp" class="d-block mb-4 h-100">
-                  <img src="img/2.webp" alt="Foto 6" class="img-thumbnail" loading="lazy">
+                  <img src="img/prefr.webp" alt="Foto 5" class="img-thumbnail t5" loading="lazy">
                </a>
             </div>
          </div>
@@ -393,21 +389,6 @@
          easing: 'ease', // default easing for AOS animations
          mirror: true
       });
-   </script>
-
-   <script>
-      import Lightbox from 'bs5-lightbox';
-
-      const options = {
-         keyboard: true,
-         size: 'fullscreen'
-      };
-
-      document.querySelectorAll('[data-toggle="lightbox"]').forEach((el) => el.addEventListener('click', (e) => {
-         e.preventDefault();
-         const lightbox = new Lightbox(el, options);
-         lightbox.show();
-      }));
    </script>
 
    <script>
